@@ -19,9 +19,11 @@ function prueba(id, cambio) {
       var conteiner = document.getElementById("img-text");
       conteiner.innerHTML = `
         <img class="img-character" src="${response.results[cambio].image}" />
+        <div class="ScreenBig">
         <p class="U-params" id="name">Name: ${response.results[cambio].name}</p>
         <p class="U-params" id="location">Location: ${response.results[cambio].location.name}</p>
         <p class="U-params" id="status">Status: ${response.results[cambio].status}</p>
+        <div/>
       `;
     });
 }

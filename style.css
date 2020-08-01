@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   background-color: #4cb5c3;
+  height: inherit;
 }
 .Title {
   width: 100%;
@@ -22,9 +23,10 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: relative;
 }
 .img-character {
-  max-width: 70%;
+  max-width: 90%;
   border-radius: 50%;
   margin: 1em auto;
 }
@@ -36,7 +38,10 @@
 
 .btn {
   text-align: end;
-  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 100px;
 }
 .change {
   background: none;
@@ -44,23 +49,72 @@
   border: none;
   font: inherit;
   outline: inherit;
-  width: 50px;
-  height: 55px;
+  width: 30px;
   margin: 1em 0.5em;
 }
 
 .img-arrow {
   max-width: 100%;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
 }
 
 @media (min-width: 500px) {
-  .img-text {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+  .img-character {
+    max-width: 70%;
   }
-
-  * {
-    background-color: white;
+  .img-Title {
+    max-width: 60%;
+  }
+  .btn {
+    top: 50vh;
+  }
+  .change {
+    width: 60px;
+  }
+}
+@media (min-width: 850px) {
+  .img-text {
+    flex-direction: row;
+  }
+  .ScreenBig {
+    margin: 1em 1em 1em 1em;
+    text-align: initial;
+    position: relative;
+  }
+  .ScreenBig p {
+    padding: 1em 0.5em;
+    margin: 0.5em;
+    font-size: 25px;
+  }
+  .btn {
+    position: absolute;
+    padding: 0 1em;
+    right: 0;
+    top: 300px;
+  }
+  .change {
+    width: 60px;
+    padding: 0 1em;
+  }
+  .img-arrow {
+    background-color: transparent;
+  }
+  .U-params {
+    width: 80%;
+  }
+}
+@media (min-width: 1000px) {
+  .btn {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    right: 0;
+    top: 50%;
+  }
+  .change {
+    width: 90px;
+    height: 90px;
   }
 }
