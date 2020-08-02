@@ -4,7 +4,7 @@
   height: inherit;
 }
 body {
-  background-image: url("./pngguru.com.png");
+  background-image: url("./primer.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 250px;
@@ -111,6 +111,12 @@ body {
   .U-params {
     width: 80%;
   }
+  body {
+    background-image: url("./pngguru.com.png"), url("./primer.png");
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -50px, right 250px;
+  }
 }
 @media (min-width: 1000px) {
   .btn {
@@ -120,8 +126,21 @@ body {
     right: 0;
     top: 50%;
   }
+  .img-text {
+    display: flex;
+    justify-content: center;
+  }
   .change {
     width: 90px;
     height: 90px;
+  }
+  .img-character {
+    margin: 1em;
+  }
+  body {
+    background-image: url("./pngguru.com.png"), url("./primer.png");
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -50px, right 250px;
   }
 }
